@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical" 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:id="@+id/WidgetBox">
+	
+	 <LinearLayout 	 android:layout_gravity="center"
+		android:layout_width="103px"
+		android:layout_height="30px"
+		android:orientation="vertical"
+	 	android:background="@drawable/weeknamebox"  >
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/DayOfWeek" android:layout_gravity="center" android:textStyle="bold" android:textSize="15sp" 
+			android:gravity="center"  android:textColor="#FFFFFF" android:paddingTop="1dip" ></TextView>
+	</LinearLayout>
+	 
+
+ 	<LinearLayout	android:layout_gravity="center"
+		android:layout_width="103px"
+		android:layout_height="30px"
+		android:orientation="horizontal" >
+
+		<AbsoluteLayout 	 android:layout_gravity="center"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			
+			<LinearLayout	android:layout_width="25px"
+				android:layout_height="30px" 
+				android:orientation="vertical" android:layout_x="0px" android:layout_y="0px" android:background="@drawable/sbox" >
+			
+					<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:id="@+id/Day" android:layout_gravity="center" android:textStyle="bold" android:textSize="15sp" 
+						android:gravity="center" android:text="00"  android:textColor="#FFFFFF"  
+						android:layout_x="0px" android:layout_y="0px">
+					</TextView>		
+			</LinearLayout>
+
+			<LinearLayout	android:layout_width="25px"
+				android:layout_height="30px" android:orientation="vertical" 
+				android:layout_x="27px" android:layout_y="0px" android:background="@drawable/sbox" >
+			
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:id="@+id/Month" android:layout_gravity="center" android:textStyle="bold" android:textSize="15sp" 
+					android:gravity="center" android:text="00"  android:textColor="#FFFFFF"></TextView>		
+			</LinearLayout>
+
+			<LinearLayout	android:layout_width="50px"
+				android:layout_height="30px" android:orientation="vertical" 
+				android:layout_x="54px" android:layout_y="0px" android:background="@drawable/sbox" >
+			
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:id="@+id/Year" android:layout_gravity="center" android:textStyle="bold" android:textSize="15sp" 
+					android:gravity="center" android:text="0000"  android:textColor="#FFFFFF"></TextView>		
+			</LinearLayout>			
+		<!-- 	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/Year" android:layout_gravity="center" android:textStyle="bold" android:textSize="15sp" 
+				android:gravity="center" android:text="2009"  android:textColor="#FFFFFF" android:paddingTop="1dip" >
+			</TextView> -->	
+		</AbsoluteLayout>									
+	</LinearLayout>
+
+</LinearLayout>
